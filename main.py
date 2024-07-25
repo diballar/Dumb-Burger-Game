@@ -37,17 +37,6 @@ scor = text_render.get_rect(center = (width // 2, 40))
 
 rand_sound = ['nom1.mp3', 'nom2.mp3', 'nom3.mp3']
 
-def draw_stuff():
-    text_render = font.render(f"{score}", True, (0, 0, 0))
-    scor = text_render.get_rect(center = (width // 2, 40))
-
-    screen.fill(brown)
-
-    screen.blit(burg, burger)
-    screen.blit(text_render, scor)
-
-    pygame.display.flip()
-
 def bite_sound():
     rand = random.choice(rand_sound)
     playsound.playsound(rand)
