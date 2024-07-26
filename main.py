@@ -36,7 +36,7 @@ text_render = font.render(f"{score}", True, (0, 0, 0))
 scor = text_render.get_rect(center = (width // 2, 40))
 
 rand_sound = ['nom1.mp3', 'nom2.mp3', 'nom3.mp3']
-music = ['music1.mp3', 'music2.mp3', 'music3.mp3']
+music = ['music1.mp3', 'music2.mp3', 'music3.mp3', 'music4.mp3']
 
 def test_thread():
     while True:
