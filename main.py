@@ -38,13 +38,13 @@ scor = text_render.get_rect(center = (width // 2, 40))
 rand_sound = ['nom1.mp3', 'nom2.mp3', 'nom3.mp3']
 music = ['music1.mp3', 'music2.mp3', 'music3.mp3', 'music4.mp3']
 
-def test_thread():
+def music_thread():
     while True:
         for x in music:
             playsound.playsound(x)
 
-def test():
-    thread2 = Thread(target= test_thread)
+def music():
+    thread2 = Thread(target= music_thread)
     thread2.daemon = True
     thread2.start()
 
@@ -56,7 +56,7 @@ def bite():
     thread = Thread(target= bite_sound)
     thread.start()
 
-test()
+music()
 
 # Main loop
 while True:
