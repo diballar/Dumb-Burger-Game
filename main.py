@@ -71,8 +71,6 @@ while True:
             bite()
 
     # Update game logic here
-    mouse_x, mouse_y = pygame.mouse.get_pos()
-
     text_render = font.render(f"{score}", True, (0, 0, 0))
     scor = text_render.get_rect(center = (width // 2, 40))
 
