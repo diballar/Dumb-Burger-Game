@@ -6,9 +6,9 @@ import random
 from threading import Thread
 
 rl_path = os.path.realpath(__file__)
-
-path = rl_path.replace('main.py', '')
-print(f"{path}")
+file = os.path.basename(rl_path)
+print(file)
+path = rl_path.replace(file, '')
 os.chdir(path)
 print(os.getcwd())
 
